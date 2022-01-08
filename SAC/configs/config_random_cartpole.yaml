@@ -1,0 +1,12 @@
+env: CartPole-v1                                                  # environnement
+seed: 5
+featExtractor: !!python/name:__main__.NothingToDo ''
+freqSave: 1000
+freqTest: 100    # 100 pour DQN, 99 pour actor critic
+nbTest: 1
+freqVerbose: 10000
+freqOptim: 10         # freqoptim = 10 pour DQN, 100 pour actor critic, 1000 pour ppo                                                                # Optimisation de la politique tous les freqOptim evenements
+fromFile: null
+nbEpisodes: 15000000000
+maxLengthTrain: 500
+maxLengthTest: 800
